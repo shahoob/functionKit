@@ -1,5 +1,5 @@
 {
-  "name": "@shehabtweel99/functionkit",
+  "name": "functionkit",
   "version": "1.0.0",
   "description": "A package with functions for example, sum 2 numbers",
   "main": "lib/app.js",
