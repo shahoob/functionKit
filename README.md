@@ -1,16 +1,18 @@
-# functionKit ![latest version | npm](https://flat.badgen.net/npm/v/functionkit?icon=npm) ![development dependency security check | David DM](https://flat.badgen.net/david/dev/functionkit/pkg) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/shahoob/functionkit/Node.js%20Package?style=flat-square?logo=github)
+# functionKit ![latest version | npm](https://flat.badgen.net/npm/v/functionkit?icon=npm) ![David](https://img.shields.io/david/dev/shahoob/functionkit?style=flat-square) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/shahoob/functionKit/Node.js%20Workflow?logo=github&style=flat-square)
  A package with functions for example, sum 2 numbers
 
  ## Install
  ```
- npm i functionhit
+ npm i functionkit
  ```
  or
  ```
  npm install functionkit
  ```
  ## Usage
+
  ### Importing
+ 
  #### From one file
  ```javascript
  import { sum, subtract, greet, divide } from 'functionKit';
