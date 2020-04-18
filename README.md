@@ -1,4 +1,4 @@
-# functionKit ![latest version | npm](https://flat.badgen.net/npm/v/functionkit?icon=npm) ![David](https://img.shields.io/david/dev/shahoob/functionkit?style=flat-square) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/shahoob/functionKit/Node.js%20Workflow?logo=github&style=flat-square)
+# functionKit ![latest version | npm](https://flat.badgen.net/npm/v/functionkit?icon=npm) ![David](https://img.shields.io/david/dev/shahoob/functionkit?style=flat-square) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/shahoob/functionKit/Node.js%20Workflow?logo=github&style=flat-square) ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/shahoob/functionKit/latest/master?include_prereleases&style=flat-square)
  A package with functions for example, sum 2 numbers
 
  ## Install
@@ -12,7 +12,7 @@
  ## Usage
 
  ### Importing
- 
+
  #### From one file
  ```javascript
  import { sum, subtract, greet, divide } from 'functionKit';

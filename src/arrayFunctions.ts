@@ -14,5 +14,4 @@ export function remove(array: any[], index: number) {
   }
   delete array[index];
   return;
-
 }

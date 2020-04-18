@@ -1,9 +1,24 @@
-import { add, remove } from '../../lib/arrayFunctions.js';
+import { add, remove } from '../arrayFunctions';
 
 const array1: any[] = [
   1,
   2,
   3
+]
+
+const array2: any[] = [
+  undefined,
+  1,
+  {
+    "empty": []
+  },
+  'string',
+  1.5,
+  undefined,
+  undefined,
+  undefined,
+  12,
+  undefined
 ]
 
 test('Add items to array', () => {

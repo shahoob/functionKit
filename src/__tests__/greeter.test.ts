@@ -1,4 +1,4 @@
-import { greet } from "../../lib/greeter.js";
+import { greet } from "../greeter";
 
 test('greet shehab (as an example)', () => {
   expect(greet('Shehab')).toBe('Hello Shehab');
