@@ -1,6 +1,6 @@
 {
   "name": "functionkit",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A package with functions for example, sum 2 numbers",
   "main": "lib/app.js",
   "types": "lib/app.d.ts",
@@ -35,5 +35,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   },
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }
