@@ -1,9 +1,42 @@
 # functionKit | What's new?
 
-In `1.1.0`:
+## `2.0.0`:
+Some changes were backwards-broken.
+
+### Breaking Changes
+
+1. `sum()`
+A. Inputs/Params
+
+The only change here is that you input an number array (`number[]`).
+At least 2 numbers in the array.
+
+But this also lets the user to sum more numbers!
+
+### New features
+
+1. Calculation Functions
+A. `multiply()`
+B. `calcPercent()`
+
+Now you can get a percent from 2 numbers!
+
+Examples:
+```javascript
+calcPercent(0.5, 1)
+// Returns: 50
+```
+
+```javascript
+calcPercent(0.5, 1, true)
+// Returns '50%'
+```
+
+## `1.1.0`:
 New Functions were added.
 
-## New features
+### New features
+
 1. Array Functions
 A. `add()`
 B. `remove()`
@@ -12,7 +45,8 @@ Well of course nobody would use them right?
 
 But there are some problems.
 
-### Problems
+#### Problems
+
 1. Array Functions
 A. `remove()`
 The item removed by `remove()`
