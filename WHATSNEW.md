@@ -1,5 +1,16 @@
 # functionKit | What's new?
 
+## `3.0.0`
+Another major release!? w h a t
+
+### Breaking changes
+
+1. Array functions
+
+Because, it's a 1 KB waste of
+pointless methods you can do without
+functionKit.
+
 ## `2.0.0`:
 Some changes were backwards-broken.
 
