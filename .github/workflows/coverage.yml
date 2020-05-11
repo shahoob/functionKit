@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm testCov
+      - run: npm run testCov
       - run: zip coverageReport.zip coverage
       - uses: actions/upload-artifact@v1
         with:
