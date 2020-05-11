@@ -50,7 +50,7 @@ jobs:
           node-version: 12
       - uses: paambaati/codeclimate@v2.6.0
         env:
-          CC_TEST_REPORTER_ID: ${{ codeclimate_id }}
+          CC_TEST_REPORTER_ID: ${{ secrets.codeclimate_id }}
         with:
             coverageCommand: npm run testCov
             debug: true
