@@ -1,5 +1,15 @@
 # functionKit | What's new?
 
+## `3.0.1`
+Well, 1 bug has been discovered.
+
+### Bug fixes
+
+1. **`app.ts`/`app.js` re-exports**
+
+Just because i forgot
+to re-export other functions.
+
 ## `3.0.0`
 Another major release!? w h a t
 
