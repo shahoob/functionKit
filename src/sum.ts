@@ -1,6 +1,6 @@
-export function sum(numbers: number[]) {
+export function sum(numbers: number[]): number {
   if (numbers.length <= 1) {
-    return new Error('Not enough numbers');
+    throw new Error('Not enough numbers');
   }
   let result = numbers.reduce((current, num) => {
     return current += num;

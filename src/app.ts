@@ -4,6 +4,7 @@ import { divide } from "./divide";
 import { greet } from "./greeter";
 import { calcPercent } from "./calcPercent";
 import { multiply } from "./multiply"
+import { half } from "./half";
 
 module.exports = {
   sum,
@@ -11,5 +12,6 @@ module.exports = {
   divide,
   greet,
   calcPercent,
-  multiply
+  multiply,
+  half
 }

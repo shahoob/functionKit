@@ -1,3 +1,3 @@
-export function divide(a: number, b: number) {
+export function divide(a: number, b: number): number {
   return a / b;
 }
