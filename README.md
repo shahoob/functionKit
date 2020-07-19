@@ -39,7 +39,7 @@
 
 // Math
  // sum (add)
-    console.log(sum(1, 1));
+    console.log(sum([1, 1]));
     // 2
     // Same as: 1 + 1
  // subtract (the opposite of sum)
