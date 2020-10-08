@@ -1,17 +1,7 @@
-import { sum } from "./sum";
-import { subtract } from "./subtract";
-import { divide } from "./divide";
-import { greet } from "./greeter";
-import { calcPercent } from "./calcPercent";
-import { multiply } from "./multiply"
-import { half } from "./half";
-
-module.exports = {
-  sum,
-  subtract,
-  divide,
-  greet,
-  calcPercent,
-  multiply,
-  half
-}
+export { sum } from "./sum";
+export { subtract } from "./subtract";
+export { divide } from "./divide";
+export { greet } from "./greeter";
+export { calcPercent } from "./calcPercent";
+export { multiply } from "./multiply"
+export { half } from "./half";
