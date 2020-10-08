@@ -1,6 +1,15 @@
-# functionKit | What's new?
+# functionKit | What's new
+
+## `3.1.0`
+
+A new array function has been added
+
+1. `clean()`
+
+It cleans your array from falsy values.
 
 ## `3.0.1`
+
 Well, 1 bug has been discovered.
 
 ### Bug fixes
@@ -11,6 +20,7 @@ Just because i forgot
 to re-export other functions.
 
 ## `3.0.0`
+
 Another major release!? w h a t
 
 ### Breaking changes
@@ -21,7 +31,8 @@ Because, it's a 1 KB waste of
 pointless methods you can do without
 functionKit.
 
-## `2.0.0`:
+## `2.0.0`
+
 Some changes were backwards-broken.
 
 ### Breaking Changes
@@ -43,6 +54,7 @@ B. `calcPercent()`
 Now you can get a percent from 2 numbers!
 
 Examples:
+
 ```javascript
 calcPercent(0.5, 1)
 // Returns: 50
@@ -53,7 +65,8 @@ calcPercent(0.5, 1, true)
 // Returns '50%'
 ```
 
-## `1.1.0`:
+## `1.1.0`
+
 New Functions were added.
 
 ### New features
