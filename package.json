@@ -1,7 +1,7 @@
 {
   "name": "functionkit",
   "version": "3.0.1",
-  "description": "A package with functions for example, sum 2 numbers",
+  "description": "A lodash ripoff",
   "main": "lib/app.js",
   "types": "lib/app.d.ts",
   "scripts": {
