@@ -105,3 +105,6 @@ dist
 
 # TypeScript
 /lib
+
+# TypeDoc
+/docs
