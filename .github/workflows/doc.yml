@@ -36,6 +36,7 @@ jobs:
           path: docs.zip
   publish-ghpages:
     runs-on: ubuntu-latest
+    needs: [doc]
     steps:
         - name: Download docs
           uses: actions/download-artifact@v2
