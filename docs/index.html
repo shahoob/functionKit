@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>functionkit</title>
+	<meta name="description" content="Documentation for functionkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">functionkit</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>functionkit</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#functionkit------" id="functionkit------" style="color: inherit; text-decoration: none;">
+					<h1>functionKit <img src="https://flat.badgen.net/npm/v/functionkit?icon=npm" alt="latest version | npm"> <img src="https://img.shields.io/david/dev/shahoob/functionkit?style=flat-square" alt="David"> <img src="https://img.shields.io/github/workflow/status/shahoob/functionKit/Node.js%20Package?logo=github&style=flat-square" alt="GitHub Workflow Status"> <img src="https://img.shields.io/github/workflow/status/shahoob/functionKit/Documentation?label=docs&logo=github&style=flat-square" alt="GitHub Workflow Status"> <img src="https://img.shields.io/github/commits-since/shahoob/functionKit/latest/master?include_prereleases&style=flat-square" alt="GitHub commits since latest release (by date including pre-releases)"> <a href="https://codeclimate.com/github/shahoob/functionKit/maintainability"><img src="https://api.codeclimate.com/v1/badges/77327835b3ba5e90a536/maintainability" alt="Maintainability"></a></h1>
+				</a>
+				<p> <del>A package with functions for example, sum 2 numbers</del>
+				A lodash ripoff</p>
+				<a href="#note" id="note" style="color: inherit; text-decoration: none;">
+					<h2>NOTE</h2>
+				</a>
+				<p>I just reialized that functionKit is a lodash ripoff!</p>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<pre><code class="language-bash">npm i functionkit</code></pre>
+				<p> or</p>
+				<pre><code class="language-bash">npm install functionkit</code></pre>
+				<a href="#importing-functionkit" id="importing-functionkit" style="color: inherit; text-decoration: none;">
+					<h2>Importing functionKit</h2>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { sum, subtract, greet, divide } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;functionKit&#x27;</span>;
+<span class="hljs-comment">// Or this</span>
+<span class="hljs-keyword">const</span> { sum, subtract, greet, divide } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;functionKit&#x27;</span>);</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-comment">// Greeter</span>
+<span class="hljs-built_in">console</span>.log(greet(<span class="hljs-string">&#x27;Shehab&#x27;</span>));
+          <span class="hljs-comment">// Hello Shehab</span>
+<span class="hljs-comment">// Custom Greeting</span>
+<span class="hljs-built_in">console</span>.log(greet(<span class="hljs-string">&#x27;Shehab&#x27;</span>, <span class="hljs-string">&#x27;Welcome back,&#x27;</span>));
+                          <span class="hljs-comment">// Welcome back, Shehab</span>
+
+<span class="hljs-comment">// Math</span>
+<span class="hljs-comment">// sum (add)</span>
+   <span class="hljs-built_in">console</span>.log(sum([<span class="hljs-number">1</span>, <span class="hljs-number">1</span>]));
+   <span class="hljs-comment">// 2</span>
+   <span class="hljs-comment">// Same as: 1 + 1</span>
+<span class="hljs-comment">// subtract (the opposite of sum)</span>
+   <span class="hljs-built_in">console</span>.log(subtract(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>));
+   <span class="hljs-comment">// 3</span>
+   <span class="hljs-comment">// Same as: 1 - 3</span>
+<span class="hljs-comment">// Divide (i can&#x27;t simplify it.)</span>
+   <span class="hljs-built_in">console</span>.log(divide(<span class="hljs-number">55</span>, <span class="hljs-number">11</span>));
+   <span class="hljs-comment">// 5</span>
+   <span class="hljs-comment">// Same as: 55 / 11</span></code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function">
+						<a href="globals.html#calcpercent" class="tsd-kind-icon">calc<wbr>Percent</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#clean" class="tsd-kind-icon">clean</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#divide" class="tsd-kind-icon">divide</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#greet" class="tsd-kind-icon">greet</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#half" class="tsd-kind-icon">half</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#multiply" class="tsd-kind-icon">multiply</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#subtract" class="tsd-kind-icon">subtract</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sum" class="tsd-kind-icon">sum</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
