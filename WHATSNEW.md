@@ -1,5 +1,19 @@
 # functionKit | What's new
 
+## `3.2.0`
+
+A new function has been added
+
+1. `range()`
+
+It's inspired by Python's range function
+And it does the same thing.
+
+--------
+
+Also, functionKit now has removed some tools that we're not used.
+(Check the commit about version `3.2.0` for more details)
+
 ## `3.1.0`
 
 A new array function has been added
