@@ -23,8 +23,6 @@ I just reialized that functionKit is a lodash ripoff!
 
  ```javascript
  import { sum, subtract, greet, divide } from 'functionKit';
- // Or this
- const { sum, subtract, greet, divide } = require('functionKit');
  ```
 
 ## Usage
@@ -51,3 +49,5 @@ I just reialized that functionKit is a lodash ripoff!
     // 5
     // Same as: 55 / 11
  ```
+
+For more documentation, head over to [shahoob.github.io/functionKit](shahoob.github.io/functionKit)
