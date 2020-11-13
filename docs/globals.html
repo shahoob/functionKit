@@ -61,7 +61,19 @@
 			<a href="globals.html#half" class="tsd-kind-icon">half</a>
 		</li>
 		<li class=" tsd-kind-function">
+			<a href="globals.html#max" class="tsd-kind-icon">max</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#min" class="tsd-kind-icon">min</a>
+		</li>
+		<li class=" tsd-kind-function">
 			<a href="globals.html#multiply" class="tsd-kind-icon">multiply</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#random" class="tsd-kind-icon">random</a>
+		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter">
+			<a href="globals.html#randomize" class="tsd-kind-icon">randomize</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#range" class="tsd-kind-icon">range</a>
@@ -95,9 +107,7 @@
 			<a href="#importing-functionkit" id="importing-functionkit" style="color: inherit; text-decoration: none;">
 				<h2>Importing functionKit</h2>
 			</a>
-			<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { sum, subtract, greet, divide } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;functionKit&#x27;</span>;
-<span class="hljs-comment">// Or this</span>
-<span class="hljs-keyword">const</span> { sum, subtract, greet, divide } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;functionKit&#x27;</span>);</code></pre>
+			<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { sum, subtract, greet, divide } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;functionKit&#x27;</span>;</code></pre>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h2>Usage</h2>
 			</a>
@@ -121,6 +131,7 @@
    <span class="hljs-built_in">console</span>.log(divide(<span class="hljs-number">55</span>, <span class="hljs-number">11</span>));
    <span class="hljs-comment">// 5</span>
    <span class="hljs-comment">// Same as: 55 / 11</span></code></pre>
+			<p>For more documentation, head over to <a href="shahoob.github.io/functionKit">shahoob.github.io/functionKit</a></p>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -134,7 +145,11 @@
 							<li class="tsd-kind-function"><a href="globals.html#divide" class="tsd-kind-icon">divide</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#greet" class="tsd-kind-icon">greet</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#half" class="tsd-kind-icon">half</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#max" class="tsd-kind-icon">max</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#min" class="tsd-kind-icon">min</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#multiply" class="tsd-kind-icon">multiply</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#random" class="tsd-kind-icon">random</a></li>
+							<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#randomize" class="tsd-kind-icon">randomize</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#range" class="tsd-kind-icon">range</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#subtract" class="tsd-kind-icon">subtract</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#sum" class="tsd-kind-icon">sum</a></li>
@@ -155,19 +170,38 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/calcPercent.ts#L1">calcPercent.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/calcPercent.ts#L10">calcPercent.ts:10</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Calculates a percent</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>2.0.0</p>
+								</dd>
+							</dl>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>current: <span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The currect progress</p>
+								</div>
 							</li>
 							<li>
 								<h5>max: <span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The completed progress (or the goal)</p>
+								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> mustBeString: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>If should return a string</p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
@@ -184,13 +218,26 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/array/clean.ts#L1">array/clean.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/array/clean.ts#L8">array/clean.ts:8</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Cleans your array from falsy values</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>since</dt>
+								<dd><p>3.1.0</p>
+								</dd>
+							</dl>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>array: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Any array you want</p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -207,7 +254,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/divide.ts#L1">divide.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/divide.ts#L1">divide.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -233,7 +280,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/greeter.ts#L1">greeter.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/greeter.ts#L1">greeter.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,13 +306,77 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/half.ts#L3">half.ts:3</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/half.ts#L3">half.ts:3</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>num: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="max" class="tsd-anchor"></a>
+				<h3>max</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">max<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/array/max.ts#L6">array/max.ts:6</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Get the largest number in an array</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>A number array</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="min" class="tsd-anchor"></a>
+				<h3>min</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">min<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/array/min.ts#L8">array/min.ts:8</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Just like the max function, reversed.
+									<br>
+								Get the smallest number in an array</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>A number array</p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -282,7 +393,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/multiply.ts#L1">multiply.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/multiply.ts#L1">multiply.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -299,6 +410,61 @@
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="random" class="tsd-anchor"></a>
+				<h3>random</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">random<span class="tsd-signature-symbol">(</span>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/random.ts#L1">random.ts:1</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>min: <span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li>
+								<h5>max: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+				<a name="randomize" class="tsd-anchor"></a>
+				<h3>randomize</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">randomize&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/array/randomize.ts#L3">array/randomize.ts:3</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="range" class="tsd-anchor"></a>
 				<h3>range</h3>
 				<ul class="tsd-signatures tsd-kind-function">
@@ -308,19 +474,39 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/range.ts#L1">range.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/range.ts#L15">range.ts:15</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>If you know python, You know what it is for.
+									<br>
+								Creates a range of numbers</p>
+							</div>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h1>Example</h1>
+							</a>
+							<pre><code class="language-javascript"><span class="hljs-keyword">const</span> onetoten = range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);</code></pre>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>from: <span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The starting number (a.k.a &#39;start&#39;)</p>
+								</div>
 							</li>
 							<li>
 								<h5>to: <span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The ending number (a.k.a &#39;stop&#39;)</p>
+								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> step: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>How many steps to take (a.k.a &#39;step&#39;)</p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -337,7 +523,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/subtract.ts#L1">subtract.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/subtract.ts#L1">subtract.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -363,7 +549,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/337d4de/src/sum.ts#L1">sum.ts:1</a></li>
+								<li>Defined in <a href="https://github.com/shahoob/functionKit/blob/1c31fbb/src/sum.ts#L1">sum.ts:1</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
