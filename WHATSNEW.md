@@ -1,5 +1,17 @@
 # functionKit | What's new
 
+## `3.3.0`
+
+more new stuff
+
+1. Array functions
+A. `max()`
+B. `min()`
+C. `randomize()`
+2. `random()`
+
+Also, I have documented more code.
+
 ## `3.2.0`
 
 A new function has been added

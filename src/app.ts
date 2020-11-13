@@ -5,5 +5,6 @@ export { greet } from "./greeter";
 export { calcPercent } from "./calcPercent";
 export { multiply } from "./multiply";
 export { half } from "./half";
+export { range } from './range';
 
 export { clean } from "./array/clean";

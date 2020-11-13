@@ -1,6 +1,6 @@
 {
   "name": "functionkit",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "A lodash ripoff",
   "main": "lib/app.js",
   "types": "lib/app.d.ts",
