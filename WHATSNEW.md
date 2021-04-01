@@ -1,5 +1,7 @@
 # functionKit | What's new
 
+## `3.4.0`
+added more re-exports
 ## `3.3.0`
 
 more new stuff
