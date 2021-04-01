@@ -9,3 +9,5 @@ export { range } from './range';
 
 export { clean } from './array/clean';
 export { max } from './array/max';
+export { min } from './array/min';
+export { randomize } from './array/randomize'
